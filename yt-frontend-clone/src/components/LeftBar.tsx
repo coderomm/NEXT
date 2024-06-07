@@ -1,6 +1,6 @@
 let total = [1, 2, 3, 4, 5, 6, 7, 8, 9]
 export const LeftBar = () => {
-    return <div className="bg-gray-950 w-100 hidden md:block">
+    return <div className="bg-gray-950 bg-white  w-[65rem] hidden md:block">
         <BarWithIcon />
         <BarWithIcon />
         <BarWithIcon />
@@ -20,7 +20,7 @@ export const LeftBar = () => {
 
 export const Line = () => {
     return <div className="w-full bg-gray-200 h-px dark:bg-gray-700 pl-3 pr-3 opacity-50	">
-        <div className="bg-red-600 h-0.5 dark:bg-gray-500" style={{ width: "100%" }}></div>
+        <div className="bg-gray-200 h-0.5 dark:bg-gray-500" style={{ width: "100%" }}></div>
     </div>
 }
 
@@ -34,11 +34,11 @@ function BarWithIcon() {
 }
 
 function BarElement({ icon, title }: { icon: any; title: string; }) {
-    return <div className="w-100 rounded-xl bg-slate-950 hover:bg-gray-700 flex p-2 m-2 cursor-pointer text-white">
-        <div className="pr-2">
+    return <div className="rounded-xls hover:bg-gray-200 flex py-2 pl-5 m-2 cursor-pointer text-white">
+        <div className="pr-2 text-black">
             {icon}
         </div>
-        <div>
+        <div className="text-black">
             {title}
         </div>
     </div>
